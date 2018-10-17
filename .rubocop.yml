@@ -3,7 +3,7 @@ inherit_from: ./config/rubocop/default.yml
 AllCops:
   DisabledByDefault: true
 
-Style/AlignHash:
+Layout/AlignHash:
   EnforcedColonStyle: key
   EnforcedLastArgumentHashStyle: always_ignore
   EnforcedHashRocketStyle: key
@@ -19,13 +19,13 @@ Style/CollectionMethods:
     detect: 'detect'
     find_all: 'select'
 
-Style/SpaceInLambdaLiteral:
+Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
 
 Style/MethodDefParentheses:
   EnforcedStyle: require_parentheses
 
-Style/MultilineAssignmentLayout:
+Layout/MultilineAssignmentLayout:
   EnforcedStyle: same_line
   
 Style/NonNilCheck:
@@ -110,7 +110,7 @@ Metrics/LineLength:
   # any regular expression listed in this option will be ignored by LineLength.
   IgnoredPatterns: []
 
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
   StyleGuide: '#accessor_mutator_method_names'
   Enabled: false
@@ -172,8 +172,8 @@ Style/EachWithObject:
 Lint/AssignmentInCondition:
   Enabled: false
   
-Lint/EndAlignment:
+Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 
-Style/IndentationWidth:
+Layout/IndentationWidth:
   Enabled: true
