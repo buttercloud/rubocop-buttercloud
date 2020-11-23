@@ -5,4 +5,4 @@ This is the rubocop configuration used at [Buttercloud](http://www.buttercloud.c
 You can find the rubocop gem here: [https://github.com/rubocop-hq/rubocop](https://github.com/rubocop-hq/rubocop)
 
 Dependencies:
-- Rubocop version: `0.59.2`
+- Rubocop version: `1.4.0`

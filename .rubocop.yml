@@ -3,7 +3,7 @@ inherit_from: ./config/rubocop/default.yml
 AllCops:
   DisabledByDefault: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedColonStyle: key
   EnforcedLastArgumentHashStyle: always_ignore
   EnforcedHashRocketStyle: key
@@ -75,17 +75,6 @@ Metrics/ParameterLists:
 Lint/InheritException:
   EnforcedStyle: standard_error
   
-Rails/SkipsModelValidations:
-  Blacklist: []
-
-Performance/StringReplacement:
-  Description: >-
-                  Use `tr` instead of `gsub` when you are replacing the same
-                  number of characters. Use `delete` instead of `gsub` when
-                  you are deleting characters.
-  Reference: 'https://github.com/JuanitoFatas/fast-ruby#stringgsub-vs-stringtr-code'
-  Enabled: false
-
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
@@ -93,7 +82,7 @@ Style/Documentation:
     - 'spec/**/*'
     - 'test/**/*'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 125
   # To make it possible to copy or click on URIs in the code, we allow lines
   # containing a URI to be longer than Max.
@@ -152,9 +141,6 @@ Lint/UnderscorePrefixedVariableName:
 
 Style/EmptyMethod:
   EnforcedStyle: expanded
-
-Performance/Casecmp:
-  Enabled: false
 
 Style/RedundantBegin:
   Enabled: false
